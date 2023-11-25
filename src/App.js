@@ -36,10 +36,10 @@ class App extends Component {
   }
 
   mostrarCarro = () => {
-    if (this.state.carro.length) {
+    if (!this.state.carro.length) {
       return
     }
-    this.setState({ esCarroVisible: !this.setState.esCarroVisible })
+    this.setState({ esCarroVisible: !this.state.esCarroVisible })
   }
 
   render() {
